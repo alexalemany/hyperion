@@ -390,6 +390,7 @@ label {
   margin-bottom: 1em;
   position: relative; }
   .c-form-group--float-label label, .c-form-group--float-label input {
+    opacity: 1;
     transition: top 0.2s;
     touch-action: manipulation; }
   .c-form-group--float-label input:focus {
@@ -418,6 +419,13 @@ label {
     top: -6px;
     cursor: pointer; }
   .c-form-group--float-label ::-webkit-input-placeholder {
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    opacity: 0;
+    transition: inherit; }
+  .c-form-group--float-label ::-moz-placeholder {
+    -webkit-transition: all .2s;
+    transition: all .2s;
     opacity: 0;
     transition: inherit; }
   .c-form-group--float-label input:focus::-webkit-input-placeholder,
